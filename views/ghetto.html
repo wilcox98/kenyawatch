@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Kenya Watch | Home</title>
+  <meta charset="utf-8">
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-3946939083404892",
+    enable_page_level_ads: true
+  });
+</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script href="./jwplayer/src/jwplayer.js"></script>
+  <script src='https://content.jwplatform.com/libraries/i511f6Xb.js'></script>
+  <link rel="stylesheets" href="./jwplayer/src/css/jwplayer.less">
+  </head>
+<body>
+	<!--navbar-->
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="/">Kenya Watch</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="/livetv">Live TV <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/ktn">KTN</a></li>
+            <li><a href="/ktnnews">KTN News</a></li>
+            <li><a href="/ntv">NTV</a></li>
+            <li><a href="/k24">K24</a></li>
+            <li><a href="/ebru">Ebru</a></li>
+            <li><a href="/kass">Kass TV</a></li>
+             <li><a href="/kiss">Kiss TV</a></li>
+          </ul>
+        </li>
+        
+        <!--<li><a href="#">Live Radio</a></li>-->
+         <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="/livetv">Live Radio <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/kiss100">Kiss 100</a></li>
+            <li><a href="/classic">Classic 105</a></li>
+            <li><a href="/ghetto">Ghetto Radio</a></li>
+            <li><a href="/hbr">HBR</a></li>
+            <li><a href="/xfm">X FM</a></li>
+            <li><a href="/kass">Kass FM</a></li>
+             <li><a href="/capital">Capital  FM</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!--end of navbar-->
+<!--video frame // review
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6"><iframe width="90%" height="315" src="https://www.youtube-nocookie.com/embed/Tpb6Xn0mZb0?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+	</div>
+	<div class="col-md-3"></div>
+</div>
+-->
+<br>
+<br>
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <div class="col-sm-2 sidenav">
+      <p><a href="/livetv">Live TV</a></p>
+      <p><a href="/liveradio">Live Radio</a></p>
+      <p><a href="#">Jobs</a></p>
+    </div>
+    <div class="col-sm-8 text-center">
+    <!--
+          <div id="player">Loading the player...</div>
+  <!--<button class="btn-info" id="bumpit">Bumb</button>--
+  <script>
+    // Setup the player
+    /*globals jwplayer */
+    const player = jwplayer('player').setup({
+      file: 'http://45.79.138.31:8002/;',
+      volume: 10
+    });
+
+    // Listen to an event
+    player.on('pause', (event) => {
+      alert('Why did my user pause their video instead of watching it?');
+    });
+
+    // Call the API
+    const bumpIt = () => {
+      const vol = player.getVolume();
+      player.setVolume(vol + 10);
+    }
+    document.querySelector('#bumpit').onclick = () => { bumpIt(); }
+  </script>
+    -->
+    <audio style="width:100%; height:350px; backround-image:#fff;" class="tv-card text-left" src="http://45.79.138.31:8002/;" autoplay="autoplay" controls="controls"></audio>
+<iframe width="100%" height="300px" src="http://45.79.138.31:8002" scrolling="no" allowfullscreen webkitallowfullscreen frameborder="0" style="border: 0 none transparent;"></iframe>
+ <!-- <audio style="width: 100%; height: 10; background-color: #000; color: #000;" src="http://45.79.138.31:8002/;" autoplay="autoplay" controls="controls"></audio>
+  
+  -->
+   </div>
+    <div class="col-sm-2 sidenav">
+      <div class="well">
+        <p>ADS</p>
+      </div>
+      <div class="well">
+        <p>ADS</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="container-fluid text-center">
+  <p> <a href="/">Kenya Watch</a> 2017 Copyrights </p>
+</footer>
+
+</body>
+</html>
