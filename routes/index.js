@@ -9,104 +9,111 @@ router.get('/', function(req, res, next) {
 });
 router.get('/livetv', function(req, res, next) {
   res.render('livetv', {
-  	title: 'Live TV' 
-  	});
-});
-router.get('/ktnnews', function(req, res, next) {
-  res.render('ktnnews', {
-  	title: 'KTN News ' 
-  	});
-});
-router.get('/ntv', function(req, res, next) {
-  res.render('ntv.html', {
-  	title: 'NTV ' 
-  	});
-});
-router.get('/ktn', function(req, res, next) {
-  res.render('ktn', {
-  	title: 'KTN ' 
-  	});
-});
-router.get('/k24', function(req, res, next) {
-  res.render('k24', {
-  	title: 'K24 ' 
+  	title: 'Live TV'
   	});
 });
 
-router.get('/ebru', function(req, res, next) {
-  res.render('ebru', {
-  	title: 'K24 ' 
+router.get('/liveradio', function(req, res, next) {
+  res.render('liveradio', {
+  	title: 'Live Radio '
   	});
 });
-router.get('/kass', function(req, res, next) {
-  res.render('kass', {
-  	title: 'Kass TV ' 
+//live tv
+router.get('/livetv/citizen', function(req, res, next) {
+  res.render('./livetv/citizen', {
+  	title: 'Citizen'
   	});
 });
-router.get('/kiss', function(req, res, next) {
-  res.render('kiss', {
-  	title: 'Kiss TV ' 
+router.get('/livetv/ktnnews', function(req, res, next) {
+  res.render('./livetv/ktnnews', {
+  	title: 'KTN News '
+  	});
+});
+router.get('/livetv/ntv', function(req, res, next) {
+  res.render('./livetv/ntv.html', {
+  	title: 'NTV '
+  	});
+});
+router.get('/livetv/ktn', function(req, res, next) {
+  res.render('./livetv/ktn', {
+  	title: 'KTN '
+  	});
+});
+router.get('/livetv/k24', function(req, res, next) {
+  res.render('./livetv/k24', {
+  	title: 'K24 '
   	});
 });
 
-router.get('/kbc', function(req, res, next) {
-  res.render('kbc', {
-  	title: 'KBC TV ' 
+router.get('/livetv/ebru', function(req, res, next) {
+  res.render('./livetv/ebru', {
+  	title: 'K24 '
+  	});
+});
+router.get('/livetv/kass', function(req, res, next) {
+  res.render('./livetv/kass', {
+  	title: 'Kass TV '
+  	});
+});
+router.get('/livetv/kiss', function(req, res, next) {
+  res.render('./livetv/kiss', {
+  	title: 'Kiss TV '
+  	});
+});
+
+router.get('/livetv//kbc', function(req, res, next) {
+  res.render('./livetv/kbc', {
+  	title: 'KBC TV '
   	});
 });
 
 //live radio routes
-router.get('/liveradio', function(req, res, next) {
-  res.render('liveradio', {
-  	title: 'Live Radio ' 
+
+router.get('/liveradio/kiss100', function(req, res, next) {
+  res.render('./liveradio/kiss100', {
+  	title: 'kiss 100 '
   	});
 });
 
-router.get('/kiss100', function(req, res, next) {
-  res.render('kiss100', {
-  	title: 'kiss 100 ' 
+router.get('/liveradio/kassfm', function(req, res, next) {
+  res.render('./liveradio/kassfm', {
+  	title: 'Kass FM '
   	});
 });
 
-router.get('/kassfm', function(req, res, next) {
-  res.render('kassfm', {
-  	title: 'Kass FM ' 
+router.get('/liveradio/classic', function(req, res, next) {
+  res.render('./liveradio/classic', {
+  	title: 'classic 105 '
   	});
 });
 
-router.get('/classic', function(req, res, next) {
-  res.render('classic', {
-  	title: 'classic 105 ' 
+router.get('/liveradio/hbr', function(req, res, next) {
+  res.render('./liveradio/hbr', {
+  	title: 'classic 105 '
   	});
 });
 
-router.get('/hbr', function(req, res, next) {
-  res.render('hbr', {
-  	title: 'classic 105 ' 
+router.get('/liveradio/ghetto', function(req, res, next) {
+  res.render('./liveradio/ghetto', {
+  	title: 'Ghetto'
   	});
 });
 
-router.get('/ghetto', function(req, res, next) {
-  res.render('ghetto', {
-  	title: 'Ghetto' 
+router.get('/liveradio/xfm', function(req, res, next) {
+  res.render('./liveradio/xfm', {
+  	title: 'X FM'
   	});
 });
 
-router.get('/xfm', function(req, res, next) {
-  res.render('xfm', {
-  	title: 'X FM' 
+router.get('/liveradio/capital', function(req, res, next) {
+  res.render('./liveradio/capital', {
+  	title: 'Capital FM'
   	});
 });
 
-router.get('/capital', function(req, res, next) {
-  res.render('capital', {
-  	title: 'Capital FM' 
-  	});
-});
-
-router.get('/nation', function(req, res, next) {
-  res.render('nation', {
-  	title: 'Nation FM' 
+router.get('/liveradio/nation', function(req, res, next) {
+  res.render('./liveradio/nation', {
+  	title: 'Nation FM'
   	});
 });
 

@@ -1,39 +1,40 @@
 
 //IBM Cloud Video Embed API instance
 /*globals UstreamEmbed */
+/*eslint-env jquery */
 var embedApi = UstreamEmbed('UstreamPlayer');
 //video duration will be stored in this variable
 var videoDuration = 0;
 //we will query the progress with an interval, we store it to be able to cancel it any time
 var progressInterval = false;
 
-var seekbarElement = document.querySelector('.seekbar');
-var seekProgressElement = document.querySelector('.seekbar .progress');
-var volumeElement = document.querySelector('.volume');
-var currentTimeElement = document.querySelector('.currentTime');
-var durationElement = document.querySelector('.duration');
+var seekbarElement = document.querySelector('seekbar');
+var seekProgressElement = document.querySelector('seekbar progress');
+var volumeElement = document.querySelector('volume');
+var currentTimeElement = document.querySelector('.curentTime');
+var durationElement = document.querySelector('duration');
 
 /**
  * API Methods
  */
 
 // PLAY
-document.querySelector('.play').addEventListener('click', function () {
+document.querySelector('play').addEventListener('click', function () {
   embedApi.callMethod('play');
 });
 
 // PAUSE
-document.querySelector('.pause').addEventListener('click', function () {
+document.querySelector('pause').addEventListener('click', function () {
   embedApi.callMethod('pause');
 });
 
 //VOLUME
-document.querySelector('.volume').addEventListener('click', function (e) {
+document.querySelector('volume').addEventListener('click', function (e) {
   //Calculate the desired volume based on the click event position (this is just an example solution)
   var volumePercentage = e.offsetX / volumeElement.offsetWidth * 100;
 
   embedApi.callMethod('volume', volumePercentage);
-  document.querySelector('.volume .slider').style.width = volumePercentage + '%';
+  document.querySelector('volume c dslider').style.width = volumePercentage + '%';
 });
 
 // SEEK
@@ -104,3 +105,50 @@ function formatTime (sec) {
 
   return time;
 }
+
+//nav fix top when scroll
+$(document).ready(function() {
+  var $navbar = $("#mNavbar");
+  
+  AdjustHeader(); // Incase the user loads the page from halfway down (or something);
+  $(window).scroll(function() {
+      AdjustHeader();
+  });
+  
+  function AdjustHeader(){
+    if ($(window).scrollTop() > 60) {
+      if (!$navbar.hasClass("navbar-fixed-top")) {
+        $navbar.addClass("navbar-fixed-top");
+      }
+    } else {
+      $navbar.removeClass("navbar-fixed-top");
+    }
+  }
+});
+
+
+
+//firebase 
+// Import and configure the Firebase SDK
+// These scripts are made available when the app is served or deployed on Firebase Hosting
+// If you do not want to serve/host your project using Firebase Hosting see https://firebase.google.com/docs/web/setup
+importScripts('/__/firebase/4.1.3/firebase-app.js');
+importScripts('/__/firebase/4.1.3/firebase-messaging.js');
+importScripts('/__/firebase/init.js');
+
+firebase.messaging();
+
+//password
+var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+function validatePassword(){
+  if(password.value != confirm_password.value) {
+    confirm_password.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirm_password.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirm_password.onkeyup = validatePassword;
