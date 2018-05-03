@@ -26,7 +26,10 @@ app.use(helmet())
 var expiryDate = new Date(Date.now() + 60 * 60 * 1000) // 1 hour
 app.use(session({
   name: 'session',
+  secret:'wilcox',
   keys: ['key1', 'key2'],
+  resave: false,
+  saveUninitialized: true,
   cookie: {
     secure: true,
     httpsOnly: true,
