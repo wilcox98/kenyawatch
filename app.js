@@ -39,6 +39,23 @@ app.use(session({
   }
 }))
 
+
+//montor the App
+
+var Probe = require('pmx').probe();
+
+var counter = 1;
+
+var metric = Probe.metric({
+  name    : 'Counter',
+  value   : function() {
+    return counter;
+  }
+});
+
+setInterval(function() {
+  counter++;
+}, 1000);
 var routes = require('./routes/index');
 app.use('/', routes);;
 
