@@ -1,6 +1,3 @@
-
-
-
 //nav fix top when scroll
 $(document).ready(function() {
   var $navbar = $("#mNavbar");

@@ -17,17 +17,17 @@ a {
     font-family: 'Roboto ', sans-serif;
   font-size:15;
 }
- /* Remove the navbar's default margin-bottom and rounded borders */ 
+ /* Remove the navbar's default margin-bottom and rounded borders */
     .navbar {
       margin-bottom: 0;
       border-radius: 0;
       background-color:#17202A;
-       font-size: 16px; 
+       font-size: 16px;
   font-family: 'roboto', sans-serif;
     }
 .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
     color: #fff;
-   
+
 }
 .navbar-nav > li > .dropdown-menu{ background-color:#212F3D; }
 .navbar-nav .navbar-nav > .active > a,
@@ -39,7 +39,7 @@ a {
   .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
     color: #fff;
     background-color: #212F3D;
-} 
+}
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
     color: #fff;
     background-color: #0056c5;
@@ -58,24 +58,24 @@ a {
     color: #262626;
     text-decoration: none;
     background-color: #0056c5;
-} 
+}
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 450px}
-    
+
     /* Set gray background color and 100% height */
     .sidenav {
       padding-top: 20px;
       background-color: #212F3D  ;
       height: 100%;
     }
-    
+
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
       color: white;
       padding: 15px;
     }
-    
+
 
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
@@ -83,7 +83,7 @@ a {
         height: auto;
         padding: 15px;
       }
-      .row.content {height:auto;} 
+      .row.content {height:auto;}
     }
     /* Style the tab */
 div.tab {
@@ -118,7 +118,7 @@ div.tab button.active {
 }
 .title-head{
     height: 5px;
-margin-bottom: -5px;    
+margin-bottom: -5px;
 text-align:center;
 color: white;
 
@@ -132,7 +132,7 @@ color: white;
     border-top: none;
     margin-left:191px;
     margin-right:145px;
-    margin-top:6.8px; 
+    margin-top:6.8px;
     background: gray;
     height:700px;
 }
@@ -152,8 +152,8 @@ color: white;
 }
 .ads{
    float: left;
-   margin-left:-5px; 
-   margin-top:10px; 
+   margin-left:-5px;
+   margin-top:10px;
   width:194px;
   height:120px;
   text-align: center;
@@ -164,11 +164,11 @@ color: white;
 
 .more{
 float:right;
-margin-right:-7px; 
+margin-right:-7px;
 background:#032633;
 width:150px;
 height:280px;
-margin-top:6px;   
+margin-top:6px;
 
 
 }
@@ -192,7 +192,7 @@ margin-top:6px;
 
 .btn-group .button:hover {
     background-color: #63A0A4;
-    
+
 }
 .button-more {
     display: inline-block;
@@ -207,16 +207,16 @@ margin-top:6px;
     cursor: pointer;
     margin: 2px;
     margin-bottom:0px;
-    
+
   }
-  
+
   .button-more span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
-  
+
   .button-more span:after {
     content: '\00bb';
     position: absolute;
@@ -225,11 +225,11 @@ margin-top:6px;
     right: -20px;
     transition: 0.5s;
   }
-  
+
   .button-more:hover span {
     padding-right: 25px;
   }
-  
+
   .button-more:hover span:after {
     opacity: 1;
     right: 0;
@@ -257,15 +257,15 @@ margin-top:6px;
     margin-right:5px;
     height:278px;
   border-left: 0.1px solid #0E4E52;
-    margin-top:-5px; 
+    margin-top:-5px;
     background-color: #000000;
-  
+
 }
 .tv-program-head{
     background:#0E4E52;
     text-align:center;
     margin-top:-10px;
-     border-radius: 0px 10px 0px 0px; 
+     border-radius: 0px 10px 0px 0px;
     -webkit-border-radius: 0px 10px 0px 0px;
     -moz-border-radius: 0px 10px 0px 0px;
     box-shadow: 0 8px 16px 0 rgba(12, 233, 227, 0.45), 0 6px 20px 0 rgba(80, 213, 241, 0.49);
@@ -280,9 +280,9 @@ margin-top:6px;
 .chat{
  width:400px;
  height: 200px;
- background: #ADE9EA; 
+ background: #ADE9EA;
  margin-left:5px;
- margin-top:0px; 
+ margin-top:0px;
  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 .chat-tab {
@@ -301,7 +301,7 @@ margin-top:6px;
     padding: 1px 4px;
     transition: 0.3s;
     align-items: center;
-    
+
 }
 .chat-tab button:hover {
     background-color: #5BE5EE;
@@ -317,13 +317,13 @@ margin-top:6px;
     margin-right: 78px;
     margin-top: -195px;
     background: #FFFFFF
- 
+
 
 }
 .ads-1{
     float: right;
-    margin-right:-585px; 
-    margin-top:-196px; 
+    margin-right:-585px;
+    margin-top:-196px;
    width:230px;
    height:125px;
    text-align: center;
@@ -343,7 +343,7 @@ margin-top:6px;
     float:left;
    margin-left:20px;
    margin-top: 10px;
-   margin-bottom:10px; 
+   margin-bottom:10px;
 }
 .tv-card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
