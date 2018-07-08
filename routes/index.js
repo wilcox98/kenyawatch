@@ -5,7 +5,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', {
-  	title: 'Home'
+  	title: 'Kenyawatch'
   	});
 });
 router.get('/livetv', function(req, res, next) {
@@ -37,7 +37,7 @@ router.get('/livetv/ntv', function(req, res, next) {
 });
 router.get('/livetv/ktn', function(req, res, next) {
   res.render('./livetv/ktn', {
-  	title: 'KTN '
+  	title: 'KTN Home'
   	});
 });
 router.get('/livetv/k24', function(req, res, next) {
@@ -48,7 +48,7 @@ router.get('/livetv/k24', function(req, res, next) {
 
 router.get('/livetv/ebru', function(req, res, next) {
   res.render('./livetv/ebru', {
-  	title: 'K24 '
+  	title: 'Ebru Tv '
   	});
 });
 router.get('/livetv/kass', function(req, res, next) {
@@ -72,7 +72,7 @@ router.get('/livetv//kbc', function(req, res, next) {
 
 router.get('/liveradio/kiss100', function(req, res, next) {
   res.render('./liveradio/kiss100', {
-  	title: 'kiss 100 '
+  	title: 'Kiss 100 '
   	});
 });
 
@@ -84,13 +84,13 @@ router.get('/liveradio/kassfm', function(req, res, next) {
 
 router.get('/liveradio/classic', function(req, res, next) {
   res.render('./liveradio/classic', {
-  	title: 'classic 105 '
+  	title: 'Classic 105 '
   	});
 });
 
 router.get('/liveradio/hbr', function(req, res, next) {
   res.render('./liveradio/hbr', {
-  	title: 'classic 105 '
+  	title: 'HBR '
   	});
 });
 
