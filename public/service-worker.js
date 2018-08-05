@@ -1,5 +1,5 @@
 var cacheName = 'myCacheVersion';
-var filesToCache = [
+var filesToCache = ['/'
   //'/views/index.html',
   //'/public/js/js.js',
   //'/public/stylesheets/style.css',
