@@ -118,4 +118,9 @@ router.get('/liveradio/nation', function(req, res, next) {
   	});
 });
 
+router.get('/signup', function(req,res){
+  res.render('./sign/signup',{
+    title: 'Register'
+  });
+});
 module.exports = router;
